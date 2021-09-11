@@ -1,0 +1,238 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100%;
+}
+.row div {
+    height: 100%;
+}
+#colR {
+    padding: 0 12px 0 4px;
+}
+#colL {
+    padding: 0 4px 0px 15px;
+}
+.col {
+    margin: 0 5px;
+}
+
+#gameboard {
+    background: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+quit {
+    margin: 20px 0px 20px;
+}
+#scoreboard .card {
+    margin: 0 20px;
+}
+    #scoreboard .card img {
+        width: 75px
+    }
+.card img {
+    height: 80px;
+    width: 80%;
+}
+#left .card {
+    margin: 0 16px 0 0px;
+}
+
+#right .card {
+    margin: 0 0px 0 16px;
+}
+
+.card-body {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+h5 {
+    text-align: center;
+    min-width: 95px;
+}
+
+p.card-title {
+    font-size: 11px;
+    height: 32px;
+    margin: 0;
+}
+
+p.card-text {
+    font-weight: bold;
+    text-align: center
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+div.card {
+    padding: 0
+}
+div.card {
+    border: 4px solid black;
+    margin: 0
+}
+body {
+    background-image: url('images/background.jpg');
+}
+
+/*players*/
+#gameboard div #player1 {
+    width: 60px;
+    height: 60px;
+    top: 60px;
+    position: absolute;
+    background-image: url('images/player1.png');
+    background-repeat: no-repeat
+}
+#gameboard div #player2 {
+    width: 60px;
+    height: 60px;
+    top: 60px;
+    right: 0px;
+    position: absolute;
+    background-image: url('images/player2.png');
+    background-repeat: no-repeat
+}
+
+#choosePlatform, #hideBeforePlatform {
+    height: auto;
+    top: 25%;
+    left: 30%;
+    text-align: center;
+    padding: 5px;
+}
+#choosePlatform h1 > img, #hideBeforePlatform h1 > img {
+    width: 200px;
+    position: relative;
+    top: 32px;
+    right: 302px;
+    z-index: -1;
+}
+#red_house,#blue_house{
+    width:45px;
+    height:40px;
+    position:absolute;
+    bottom:5px;
+    left:70px
+}
+
+
+#end_game {
+    border: 2px solid black;
+    height: 600px;
+    top: 25%;
+    left: 30%;
+    text-align: center;
+    padding: 5px;
+    background-repeat:no-repeat
+}
+ #end_game img {
+     width: 1000px;
+     position: relative;
+     left:50px
+ }
+.title {
+    margin-bottom: 50px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 3px 3px #333;
+}
+#steamButton, #mcdonaldButton, #start, #quit {
+    border: 9px solid #b33c00;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    font-family: monospace
+}
+#steamButton {
+    margin-right: 25px;
+}
+    #steamButton:hover, #mcdonaldButton:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    }
+    #steamButton > img {
+        width: 40px;
+        height: 44px
+    }
+
+#mcdonaldButton > img {
+    width: 50px;
+    height: 50px;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+}
+table {
+    text-align: center;
+    width: 100%;
+}
+
+#tabelCubes .col {
+    padding: 0 2px;
+}
+
+div .dice {
+    padding: 4px;
+    background-color: tomato;
+    width: 104px;
+    height: 104px;
+    border-radius: 10%;
+    border: 3.5px solid;
+    border-color: white;
+}
+.dot {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-face, .third-face {
+    display: flex;
+    justify-content: space-between;
+}
+    .second-face .dot:nth-of-type(2) {
+        align-self: flex-end;
+    }
+
+    .third-face .dot:nth-of-type(2) {
+        align-self: center;
+    }
+    .third-face .dot:nth-of-type(3),.fourth-face .column:nth-of-type(2) {
+        align-self: flex-end;
+    }
+
+
+.fourth-face, .fifth-face {
+    display: flex;
+    justify-content: space-between;
+}
+    .fourth-face .column, .fifth-face .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+}
+#hideBeforePlatform{
+    height:auto;
+}
+
+/*animations*/
