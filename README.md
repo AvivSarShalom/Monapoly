@@ -1,4 +1,4 @@
-# Monapoly
+# Monopoly
 a web Monopoly with two themes : McDonald's and Steam.
 A porject that given by course html.
 there can be only two players. 
